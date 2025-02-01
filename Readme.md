@@ -33,7 +33,7 @@ You can use different UIs to run the colorizer model. Choose one of the followin
 ### **1. Normal Python UI**
 Run the basic UI application:
 ```bash
-python main_normal.py
+python main normal.py
 ```
 
 ### **2. Dash UI**
@@ -52,12 +52,6 @@ streamlit run main_streamlit.py
 Run the Gradio-based web interface:
 ```bash
 python main_gradio.py
-```
-
-### **5. Flask Web UI**
-If there is a Flask-based UI, run:
-```bash
-python main_flask.py
 ```
 
 ---
