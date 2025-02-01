@@ -5,7 +5,7 @@ import cv2
 import gradio as gr
 
 # Define the URL and the destination path
-url = "https://uca88b8a467313dbd32503f32cd9.dl.dropboxusercontent.com/cd/0/get/CjN6RWs9aVScWRqfEDUgCKmow0rDtc9hFcQk70avprr05CtMpGYq7KgktcJBEIFDxuAAtLApl-DSVhKyzgDtUF0geVuMTB0aentyjOVKX8WLqqRrrNY72AEcV4mixOLDgI5xZE9fBWwrRKQfy6nVOGKv/file?dl=1"
+url = "https://www.dropbox.com/s/dx0qvhhp5hbcx7z/colorization_release_v2.caffemodel?dl=1"
 destination_folder = "models"
 destination_file = os.path.join(destination_folder, "colorization_release_v2.caffemodel")
 
