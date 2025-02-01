@@ -1,5 +1,6 @@
 import os
 import requests
+import subprocess
 
 # Define the URL and the destination path
 url = "https://uca88b8a467313dbd32503f32cd9.dl.dropboxusercontent.com/cd/0/get/CjN6RWs9aVScWRqfEDUgCKmow0rDtc9hFcQk70avprr05CtMpGYq7KgktcJBEIFDxuAAtLApl-DSVhKyzgDtUF0geVuMTB0aentyjOVKX8WLqqRrrNY72AEcV4mixOLDgI5xZE9fBWwrRKQfy6nVOGKv/file?dl=1"
@@ -22,5 +23,12 @@ try:
 
     print(f"Download completed: {destination_file}")
 
+    # Run the main_gradio.py script
+    print("Running main_gradio.py...")
+    subprocess.run(["python", "main_gradio.py"], check=True)
+
 except requests.exceptions.RequestException as e:
     print(f"Download failed: {e}")
+
+except subprocess.CalledProcessError as e:
+    print(f"Error while running main_gradio.py: {e}")
